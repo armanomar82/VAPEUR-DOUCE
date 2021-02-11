@@ -1,0 +1,215 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* Main Styling */
+
+@font-face {
+  src: url(./../font/vapeur.woff);
+  font-family: vapeur;
+}
+html,body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+  background-color: #f3f2ee;
+}
+
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+a{
+  color:#fff;
+  text-decoration: none;
+
+}
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 900px;
+  overflow: auto;
+  padding: 0 20px;
+}
+/* Navbar */
+#navbar {
+  background: #96bb7c;
+  color: #fff;
+  overflow: auto;
+  margin-bottom: 3rem;
+
+}
+#navbar a {
+  color: #fff;
+}
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+  margin-left: 6rem;
+}
+/* contener */
+.continer-content__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+}
+.continer-content__text{
+  text-align: center;
+  font: 3rem vapeur;
+}
+.continer-content__form{
+  text-align: center;
+}
+
+input.form-search{
+  width: 407px;
+  height: 2rem;
+}
+input.form-search:focus{
+  box-shadow: 0 4px 8px 0 #00000020, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button.form-btn{
+  background-color: #184d47; /* Green */
+  border: none;
+  height: 2rem;
+  width: 5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition-duration: 0.4s;
+}
+button.form-btn:hover{
+  background-color: #96bb7c; /* Green */
+  color: rgb(0, 0, 0);
+}
+
+.aliment{
+  margin-bottom: 3rem;
+}
+.aliment-container{
+  display: flex;
+
+  flex-flow: row nowrap;
+}
+.aliment-container > .item{
+  width: 150px;
+  height: 57px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: .8rem;
+  color: rgb(89, 89, 89);
+
+}
+.item:nth-child(1){
+  background-image: linear-gradient(#e3e0e0, #fff);
+  border: solid 1px #fff;
+
+}
+.item:nth-child(1){
+  background-image: linear-gradient(#e3e0e0, #fff);
+
+}
+.item:nth-child(2){
+  background-image: linear-gradient(#fff, #96bb7c7e);
+
+}
+.item:nth-child(3){
+  background-color: #96bb7c;
+
+}
+.item:nth-child(4){
+  background-image: linear-gradient(#e3e0e0, #96bb7c);
+
+}
+.item:nth-child(5){
+  background-image: linear-gradient(#fff, #fad586);
+
+}
+.item:nth-child(6){
+  background-color: #184d47;
+  color:#fff;
+  text-align: center;
+
+}
+
+/* card overView */
+
+.card {
+
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem; }
+  .card__side {
+    height: 52rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #96bb7c, #184d47); }
+    
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #96bb7c, #184d47), url(../img/nat-5.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, #96bb7c, #184d47); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+
+
